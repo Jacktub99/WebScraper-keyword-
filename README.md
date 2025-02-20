@@ -67,4 +67,4 @@ git clone <repository_url>
 ```
 
 ## Licenza 📜
-Questo progetto è rilasciato sotto la licenza MIT. Puoi modificarlo e distribuirlo liberamente rispettando i termini della licenza.
+Questa risorsa può essere utilizzata per scopi di ricerca e professionali. Si prega di citare l'autore 'Giacomo Mortara' e il link alla repository del progetto originale se lo si utilizza.
