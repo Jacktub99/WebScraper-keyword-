@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <!-- Impostazione della codifica dei caratteri come UTF-8 per supportare caratteri speciali -->
+    <meta charset="UTF-8">
+
+    <!-- Impostazioni per il responsive design, la larghezza della pagina si adatta alla larghezza del dispositivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Titolo della pagina che appare sulla barra del browser o nella scheda -->
+    <title>Analisi SERP</title>
+
+    <!-- Collegamento al file CSS per lo stile della pagina -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <!-- Contenitore principale della pagina -->
+    <div class="container">
+        <!-- Titolo principale della pagina -->
+        <h1>Analisi SERP by Giacomo Mortara</h1>
+
+        <!-- Campo di input per inserire la keyword da cercare nelle SERP -->
+        <input type="text" id="keywordInput" placeholder="Inserisci una keyword">
+
+        <!-- Pulsante che, quando cliccato, esegue la ricerca tramite la funzione 'searchSERP' -->
+        <button onclick="searchSERP()">Cerca</button>
+
+        <!-- Sezione per i risultati della ricerca -->
+        <h2>Risultati:</h2>
+
+        <!-- Tabella per visualizzare i risultati della ricerca -->
+        <table id="resultsTable">
+            <thead>
+                <tr>
+                    <th>#</th> <!-- Intestazione per il numero di ordine -->
+                    <th>URL</th> <!-- Intestazione per il link alla pagina -->
+                    <th>Title</th> <!-- Intestazione per il titolo della pagina -->
+                    <th>Analizza</th> <!-- Intestazione per il pulsante di analisi -->
+                </tr>
+            </thead>
+            <!-- Corpo della tabella che verrà popolato dinamicamente con i risultati -->
+            <tbody></tbody>
+        </table>
+
+        <!-- Sezione per visualizzare l'analisi dettagliata di una pagina -->
+        <h2>Analisi Dettagliata:</h2>
+
+        <!-- Div dove saranno mostrati i dettagli dell'analisi della pagina -->
+        <div id="analysisResults"></div>
+    </div>
+
+    <!-- Collegamento al file JavaScript per la gestione delle funzionalità dinamiche -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+/* Stile generale per il corpo della pagina */
+body {
+    font-family: Arial, sans-serif;  /* Imposta il font principale come Arial, con sans-serif come alternativa */
+    background-color: #f5f5f5;      /* Imposta il colore di sfondo della pagina su un grigio chiaro */
+    text-align: center;             /* Allinea il testo al centro della pagina */
+}
+
+/* Contenitore principale della pagina */
+.container {
+    width: 80%;                     /* Imposta la larghezza del contenitore al 80% della larghezza della finestra */
+    margin: auto;                    /* Centra il contenitore orizzontalmente */
+    background: white;               /* Imposta lo sfondo del contenitore a bianco */
+    padding: 20px;                   /* Aggiunge uno spazio interno di 20px attorno al contenuto */
+    border-radius: 10px;             /* Arrotonda gli angoli del contenitore di 10px */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Aggiunge un'ombra sottile attorno al contenitore */
+}
+
+/* Stili generali per input e pulsanti */
+input, button {
+    padding: 10px;      /* Aggiunge uno spazio interno di 10px per migliorare l'usabilità */
+    font-size: 16px;    /* Imposta la dimensione del testo a 16px per una buona leggibilità */
+    margin: 10px;       /* Aggiunge un margine di 10px intorno agli elementi per separarli */
+}
+
+/* Stili per la tabella */
+table {
+    width: 100%;             /* Imposta la larghezza della tabella al 100% del contenitore */
+    border-collapse: collapse; /* Rimuove lo spazio tra i bordi delle celle per un aspetto più pulito */
+    margin-top: 20px;         /* Aggiunge uno spazio superiore di 20px per distanziarla dagli altri elementi */
+}
+
+/* Stili per le celle dell'intestazione e del corpo della tabella */
+th, td {
+    border: 1px solid #ddd; /* Aggiunge un bordo grigio chiaro di 1px alle celle per separarle */
+    padding: 10px;          /* Aggiunge uno spazio interno di 10px per migliorare la leggibilità */
+}
+
+/* Stili specifici per l'intestazione della tabella */
+th {
+    background-color: #4CAF50; /* Imposta lo sfondo delle intestazioni su un verde acceso */
+    color: white;              /* Imposta il colore del testo a bianco per un contrasto ottimale */
+}
